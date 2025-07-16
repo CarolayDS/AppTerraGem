@@ -6,7 +6,7 @@ import 'package:gemini_gpt/onboarding.dart';
 void main() async {
   await dotenv.load(fileName: ".env");
 
-  runApp(ProviderScope(child: MyApp()));
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends ConsumerWidget {
@@ -14,8 +14,8 @@ class MyApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return MaterialApp(
-      title: 'Flutter Demo',
+    return const MaterialApp(
+      title: 'TerraGem',
       home: Onboarding(),
       debugShowCheckedModeBanner: false,
     );

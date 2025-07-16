@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center, // Centrado vertical
           children: [
             // Título y emoji
-            Text(
+            const Text(
               '¿Qué tipo de cultivo estás trabajando?',
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -49,8 +49,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 color: Color.fromRGBO(135, 76, 59, 1.0),
               ),
             ),
-            SizedBox(height: 12),
-            Text(
+            const SizedBox(height: 12),
+            const Text(
               '🌱 Es importante conocer tu tipo de cultivo para obtener mejores resultados en tu cosecha 🌾',
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -62,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
 
-            SizedBox(height: 12), // Espacio entre el texto y la imagen
+            const SizedBox(height: 12), // Espacio entre el texto y la imagen
 
             // Imagen centrada
             Image.asset(
@@ -71,12 +71,13 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 200, // Ajusta el valor para cambiar la altura
               fit: BoxFit.contain, // Opcional: ajusta el ajuste de la imagen
             ),
-            SizedBox(height: 32), // Espacio entre la imagen y el campo de texto
+            const SizedBox(
+                height: 32), // Espacio entre la imagen y el campo de texto
 
             // Campo de texto para ingresar el nombre del cultivo
             TextField(
               controller: _controller,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Ingresa tu cultivo',
                 labelStyle: TextStyle(color: Color.fromRGBO(157, 154, 154, 1)),
                 border: OutlineInputBorder(),
@@ -98,10 +99,11 @@ class _MyHomePageState extends State<MyHomePage> {
               style: ElevatedButton.styleFrom(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30)),
-                padding: EdgeInsets.symmetric(vertical: 16, horizontal: 32),
-                backgroundColor: Color.fromRGBO(135, 76, 59, 1.0),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
+                backgroundColor: const Color.fromRGBO(135, 76, 59, 1.0),
               ),
-              child: Row(
+              child: const Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(

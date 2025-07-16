@@ -17,7 +17,7 @@ class Onboarding extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    Text(
+                    const Text(
                       '¡Bienvenido!',
                       style: TextStyle(
                         fontSize: 24,
@@ -25,13 +25,14 @@ class Onboarding extends StatelessWidget {
                         color: Color.fromRGBO(228, 136, 100, 1),
                       ),
                     ),
-                    SizedBox(height: 16), // Espacio entre el texto y la imagen
+                    const SizedBox(
+                        height: 16), // Espacio entre el texto y la imagen
                     // Coloca el texto y la imagen al costado (en un Row)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Text(
+                        const Text(
                           'TerraGem ',
                           style: TextStyle(
                             fontSize: 34,
@@ -47,15 +48,15 @@ class Onboarding extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 16,
                     ),
-                    Text(
+                    const Text(
                       'App para interpretar análisis de suelo 🌱📊, optimiza cultivos con inteligencia artificial 🤖💡',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 16,
-                        color: const Color.fromARGB(255, 77, 74, 74),
+                        color: Color.fromARGB(255, 77, 74, 74),
                       ),
                     )
                   ],
@@ -79,11 +80,12 @@ class Onboarding extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30)),
-                    padding: EdgeInsets.symmetric(vertical: 16, horizontal: 32),
-                    backgroundColor: Color.fromRGBO(
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 16, horizontal: 32),
+                    backgroundColor: const Color.fromRGBO(
                         135, 76, 59, 1.0), // Botón de color neutro
                   ),
-                  child: Row(
+                  child: const Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Text(

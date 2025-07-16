@@ -82,19 +82,20 @@ class _ParametersPageState extends State<ParametersPage> {
               'assets/terragem_p.png', // Asegúrate de que la ruta de la imagen sea correcta
               height: 30, // Ajusta el tamaño de la imagen según sea necesario
             ),
-            SizedBox(width: 10),
-            Text(
+            const SizedBox(width: 10),
+            const Text(
               'TerraGem',
               style: TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.bold, // Texto en negrita
-                color: const Color.fromRGBO(135, 76, 59,
+                color: Color.fromRGBO(135, 76, 59,
                     1.0), // Color del texto (puedes ajustarlo a tu preferencia)
               ),
             )
           ],
         ),
-        backgroundColor: Color.fromRGBO(232, 214, 191, 1.0), // Fondo de color
+        backgroundColor:
+            const Color.fromRGBO(232, 214, 191, 1.0), // Fondo de color
       ),
       body: SingleChildScrollView(
         // Permitir que el contenido sea desplazable
@@ -104,7 +105,7 @@ class _ParametersPageState extends State<ParametersPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // Texto de bienvenida
-              Text(
+              const Text(
                 '🌱 Ingresa los parámetros fundamentales para la interpretación de tu cultivo 🌾',
                 textAlign: TextAlign.center,
                 style: TextStyle(
@@ -138,7 +139,7 @@ class _ParametersPageState extends State<ParametersPage> {
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     backgroundColor: _isFormValid
-                        ? Color.fromRGBO(135, 76, 59, 1.0)
+                        ? const Color.fromRGBO(135, 76, 59, 1.0)
                         : Colors.grey, // Cambiar color del botón según validez
                     padding: const EdgeInsets.symmetric(
                         horizontal: 50, vertical: 15),
@@ -174,7 +175,7 @@ class _ParametersPageState extends State<ParametersPage> {
           // Título o etiqueta encima del campo de texto
           Text(
             description,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 16,
               color: Color.fromRGBO(135, 76, 59, 1.0),
               fontWeight: FontWeight.bold,
@@ -182,7 +183,7 @@ class _ParametersPageState extends State<ParametersPage> {
           ),
           const SizedBox(height: 8),
           // Campo de texto con un ancho fijo y uniforme
-          Container(
+          SizedBox(
             width: double
                 .infinity, // Asegura que el campo ocupe todo el ancho disponible
             child: TextField(
@@ -193,10 +194,11 @@ class _ParametersPageState extends State<ParametersPage> {
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
                   borderSide:
-                      BorderSide(color: const Color.fromRGBO(135, 76, 59, 1.0)),
+                      const BorderSide(color: Color.fromRGBO(135, 76, 59, 1.0)),
                 ),
                 hintText: 'Ingresa $label',
-                hintStyle: TextStyle(color: Color.fromRGBO(142, 127, 116, 1)),
+                hintStyle:
+                    const TextStyle(color: Color.fromRGBO(142, 127, 116, 1)),
               ),
               keyboardType: TextInputType.number, // Tipo de teclado numérico
               onChanged: (_) =>
